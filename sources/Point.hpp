@@ -17,6 +17,6 @@ namespace ariel
         Point(double, double);
         double distance(const Point &) const;
         void print() const;
-        Point moveTowards(Point &, double) const;
+        &Point moveTowards(Point &, double) const;
     };
 }

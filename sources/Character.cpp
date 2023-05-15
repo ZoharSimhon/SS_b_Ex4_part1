@@ -1,8 +1,34 @@
 #include "Character.hpp"
 using namespace ariel;
 
-
 // constructor
-Character(const Point & location, int hitPoint, string name)
+Character::Character(const Point &location, int hitPoint, string name)
+{
+}
+
+bool Character::isAlive() const
+{
+    return true;
+}
+
+double Character::distance(const Character & otherCharecter) const
+{
+    return 0.0;
+}
+
+void Character::hit(int num)
+{
+}
+
+string Character::getName() const
+{
+    return this->name;
+}
+int Character::getLocation() const
+{
+    return this->location;
+}
+
+void Character::print() const
 {
 }

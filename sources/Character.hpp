@@ -1,3 +1,4 @@
+#pragma once
 #include "Point.hpp"
 
 namespace ariel
@@ -18,6 +19,6 @@ namespace ariel
         string getName() const;
         int getLocation() const;
         void print() const;
-    };
+    }; //class Character
 
-} // namespace ariel
+} // namespace ariel    
