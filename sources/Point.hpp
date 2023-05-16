@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -17,6 +18,6 @@ namespace ariel
         Point(double, double);
         double distance(const Point &) const;
         void print() const;
-        &Point moveTowards(Point &, double) const;
+        Point moveTowards(Point &, double) const;
     };
 }

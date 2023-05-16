@@ -2,11 +2,7 @@
 using namespace ariel;
 
 // constructor
-Point::Point(double x, double y)
-{
-    this->x_ = x;
-    this->y_ = y;
-}
+Point::Point(double x, double y) : x_(x), y_(y) {}
 
 double Point::distance(const Point &otherPoint) const
 {
@@ -15,7 +11,7 @@ double Point::distance(const Point &otherPoint) const
 
 void Point::print() const {}
 
-&Point Point::moveTowards(Point & dest, double distance) const
+    & Point Point::moveTowards(Point &dest, double distance) const
 {
     return Point(0.0, 0.0);
 }

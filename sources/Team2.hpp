@@ -8,18 +8,18 @@
 
 namespace ariel
 {
-    class Team
+    class Team2
     {
     private:
         vector<Character *> group;
         int leaderIndex;
 
     public:
-        Team(Character);
+        Team2(Character);
         void add(Character *);
-        void attack(Team *);
+        void attack(Team2 *);
         int stillAlive() const;
         void print() const;
-        // ~Team();
+        // ~Team2();
     };
 }

@@ -3,15 +3,14 @@ using namespace ariel;
 
 // constructor
 Character::Character(const Point &location, int hitPoint, string name)
-{
-}
+    : location_(location), hitPoint_(hitPoint), name_(name) {}
 
 bool Character::isAlive() const
 {
     return true;
 }
 
-double Character::distance(const Character & otherCharecter) const
+double Character::distance(const Character &otherCharecter) const
 {
     return 0.0;
 }

@@ -1,11 +1,12 @@
 #pragma once
 #include "Ninja.hpp"
 
-class OldNinja : public Ninja
+namespace ariel
 {
-private:
-    /* data */
-public:
-    OldNinja(string, const &Point);
-};
-
+    class OldNinja : public Ninja
+    {
+    public:
+        OldNinja(string name, const Point &location)
+            : Ninja(location, OLD_NINJA_HIT_POINT, name, OLD_NINJA_SPEAD) {}
+    };
+} // namespace name

@@ -2,10 +2,14 @@
 
 #include "Ninja.hpp"
 
-class YoungNinja : public Ninja
+namespace ariel
 {
-private:
-    /* data */
-public:
-    YoungNinja(string, const &Point);
-};
+    class YoungNinja : public Ninja
+    {
+    private:
+        /* data */
+    public:
+        YoungNinja(string name, const Point &location)
+            : Ninja(location, YOUNG_NINJA_HIT_POINT, name, YOUNG_NINJA_SPEAD)
+    };
+}

@@ -1,13 +1,16 @@
 #pragma once
 #include "Character.hpp"
 
-class Ninja : public Character
+namespace ariel
 {
-private:
-    int spead;
+    class Ninja : public Character
+    {
+    private:
+        int spead_;
 
-public:
-    Ninja(onst Point &, int, string, int);
-    void move(const Character *);
-    void slash(Character *) const;
-};
+    public:
+        Ninja(const Point &, int, string, int);
+        void move(const Character *);
+        void slash(Character *) const;
+    };
+}

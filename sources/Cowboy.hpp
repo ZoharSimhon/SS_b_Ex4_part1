@@ -1,14 +1,17 @@
 #pragma once
 #include "Character.hpp"
 
-class Cowboy : public Character
+namespace ariel
 {
-private:
-    int ballsNumber;
+    class Cowboy : public Character
+    {
+    private:
+        int ballsNumber_;
 
-public:
-    Cowboy(string, const Point &);
-    void shoot(Character *) const;
-    bool hasboolets() const;
-    void reload();
-};
+    public:
+        Cowboy(string, const Point &);
+        void shoot(Character *) const;
+        bool hasboolets() const;
+        void reload();
+    };
+}
