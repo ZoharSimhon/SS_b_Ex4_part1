@@ -15,7 +15,7 @@ namespace ariel
         int leaderIndex;
 
     public:
-        Team(Character);
+        Team(Character *);
         void add(Character *);
         void attack(Team *);
         int stillAlive() const;

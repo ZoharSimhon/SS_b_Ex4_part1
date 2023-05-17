@@ -7,6 +7,6 @@ namespace ariel
     {
     public:
         OldNinja(string name, const Point &location)
-            : Ninja(location, OLD_NINJA_HIT_POINT, name, OLD_NINJA_SPEAD) {}
+            : Ninja(location, OLD_NINJA_HIT_POINT, std::move(name), OLD_NINJA_SPEAD) {}
     };
 } // namespace name

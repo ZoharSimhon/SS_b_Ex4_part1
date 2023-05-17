@@ -5,7 +5,7 @@ using namespace ariel;
 Cowboy::Cowboy(string name, const Point &location)
     : Character(location, COWBOY_HIT_POINT, name), ballsNumber_(COWBOY_HIT_POINT) {}
 
-void Cowboy::shoot(Character *) const
+void Cowboy::shoot(Character * enemy) const
 {
 }
 bool Cowboy::hasboolets() const

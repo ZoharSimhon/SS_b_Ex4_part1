@@ -3,12 +3,12 @@
 
 namespace ariel
 {
-    class TrainedNinja : Ninja
+    class TrainedNinja : public Ninja
     {
     private:
         /* data */
     public:
         TrainedNinja(string name, const Point &location)
-            : Ninja(location, TRAINED_NINJA_HIT_POINT, name, TRAINED_NINJA_SPEAD) {}
+            : Ninja(location, TRAINED_NINJA_HIT_POINT, std::move(name), TRAINED_NINJA_SPEAD) {}
     };
 }

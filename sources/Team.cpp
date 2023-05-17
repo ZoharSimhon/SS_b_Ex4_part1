@@ -2,7 +2,7 @@
 
 using namespace ariel;
 
-Team::Team(Character leader)
+Team::Team(Character * leader)
 {
     this->group.push_back(leader);
     this->leaderIndex = 0;

@@ -16,8 +16,11 @@ namespace ariel
     public:
         // constructors
         Point(double, double);
+        //getters
+        double getX();
+        double getY();
         double distance(const Point &) const;
-        void print() const;
-        Point moveTowards(Point &, double) const;
+        string print() const;
+        static const Point moveTowards(const Point &,const Point &, double);
     };
 }

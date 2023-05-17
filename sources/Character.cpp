@@ -21,13 +21,14 @@ void Character::hit(int num)
 
 string Character::getName() const
 {
-    return this->name;
+    return this->name_;
 }
-int Character::getLocation() const
+Point Character::getLocation() const
 {
-    return this->location;
+    return this->location_;
 }
 
-void Character::print() const
+string Character::print() const
 {
+    return "Character";
 }

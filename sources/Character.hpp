@@ -28,8 +28,8 @@ namespace ariel
         double distance(const Character &) const;
         void hit(int);
         string getName() const;
-        int getLocation() const;
-        void print() const;
+        Point getLocation() const;
+        string print() const;
     }; //class Character
 
 } // namespace ariel    

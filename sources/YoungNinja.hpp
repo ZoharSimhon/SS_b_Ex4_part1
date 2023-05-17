@@ -10,6 +10,6 @@ namespace ariel
         /* data */
     public:
         YoungNinja(string name, const Point &location)
-            : Ninja(location, YOUNG_NINJA_HIT_POINT, name, YOUNG_NINJA_SPEAD)
+            : Ninja(location, YOUNG_NINJA_HIT_POINT, std::move(name), YOUNG_NINJA_SPEAD) {}
     };
 }
